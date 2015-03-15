@@ -1,4 +1,4 @@
-*** prerequisities ***
+*** prerequisites ***
 
 # have java installed
 # have ant + ant contrib installed
@@ -18,11 +18,10 @@ testAll - run previous three
 validateAll
 
 
-6. open the comparison.html file generated to visually compare the old and new pictures
+6. open the generated comparison.html file to visually compare old and new images
 
-
-The testing framework can be used also for developping.
-To calculate only one or few files (faster) change the defalut filter values in build.properties, e.g.:
+The testing framework can be used also for developing.
+To calculate only one or few files (faster) change the default filter values in build.properties, e.g.:
 batchTransform.filter=t_time.*\.xml
 createComparison.filter=t_time.*\.svg
 
@@ -36,5 +35,5 @@ generatePng.dir=c:/Temp/__testG2S/_examples/
 c:\java\apache-ant-1.8.0\bin\ant genereatePng
 
 #
-the ant script will recursively go through all directories in a given folder and 
-transforms every file with .svg extension will to .png (to the same directory).
+The ant script will recursively go through all directories in a given folder and 
+transforms every file with .svg extension to .png (to the same directory).
